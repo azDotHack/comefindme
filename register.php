@@ -6,6 +6,7 @@
 	<meta name="author" content="arizonaDotHack">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
+	<meta name="robots" content="noindex, nofollow">
 	<link rel="stylesheet" href="style.css">
 	<script></script>
 </head>
