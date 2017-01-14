@@ -24,7 +24,15 @@
 			Confirm Password:
 			<input type="password" name="password1" id="password1"><br>
 			Phone Number:
-			<input type="tel" name="phone"><br>
+			<input type="tel" name="phone" id="phone"><br>
+			State:
+			<input type="text" name="state" id="state"><br>
+			ZIP Code:
+			<input type="text"zip" id="zip"><br>
+			Description of your qualities:<br>
+			<textarea></textarea><br>
+			List of Skills:<br>
+			<textarea></textarea><br>
 			I promise not to use this site for malicious purposes.<br>
 			<input type="checkbox" name="agree" value="yes">Yes, I agree<br>
 			<input type="submit" value="Submit">
