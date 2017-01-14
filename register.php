@@ -16,9 +16,9 @@
 	<fieldset>
 		<form action="regconfirm.php" method="post">
 			Email Address:
-			<input type="email" name="email0"><br>
+			<input type="email" name="email0" id="email0"><br>
 			Confirm Email Address:
-			<input type="email" name="email1"><br>
+			<input type="email" name="email1" id="email1"><br>
 			Password:
 			<input type="password" name="password0"><br>
 			Confirm Password:
