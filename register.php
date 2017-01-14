@@ -24,11 +24,11 @@
 			Confirm Password:
 			<input type="password" name="password1" id="password1"><br>
 			Phone Number:
-			<input type="tel" name="phone" id="phone"><br>
+			<input type="tel" name="phone" id="phone" maxlength="2"><br>
 			State:
-			<input type="text" name="state" id="state"><br>
+			<input type="text" name="state" id="state" maxlength="2"><br>
 			ZIP Code:
-			<input type="text"zip" id="zip"><br>
+			<input type="text" name="zip" id="zip" maxlength="5"><br>
 			Description of your qualities:<br>
 			<textarea></textarea><br>
 			List of Skills:<br>
