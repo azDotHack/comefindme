@@ -34,6 +34,7 @@
 			List of Skills:<br>
 			<textarea></textarea><br>
 			I promise not to use this site for malicious purposes.<br>
+			<!-- This is a comment -->
 			<input type="checkbox" name="agree" value="yes">Yes, I agree<br>
 			<input type="submit" value="Submit">
 		</form>
