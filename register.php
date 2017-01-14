@@ -20,7 +20,7 @@
 			Confirm Email Address:
 			<input type="email" name="email1" id="email1"><br>
 			Password:
-			<input type="password" name="password0"><br>
+			<input type="password" name="password0" id="password0"><br>
 			Confirm Password:
 			<input type="password" name="password1"><br>
 			Phone Number:
