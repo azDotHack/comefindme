@@ -32,7 +32,7 @@
 				extension = file.substring(file.length - 3);
 
 			//check to see if the file extension is a valid one
-			if (extension == "peg" || extension == "jpg" || extension == "png" || extension == "gif")
+			if (extension == "jpeg" || extension == "jpg" || extension == "png" || extension == "gif")
 				return true;
 
 			//this will run if the extension is invalid
