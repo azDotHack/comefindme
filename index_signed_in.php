@@ -1,1 +1,1 @@
-<h2>Hooray for SpongeBOOOOOOOOB!!!<h2>
+<h2>Hooray for SpongeBOOOOOOOOB!!!</h2>
