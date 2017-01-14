@@ -22,7 +22,7 @@
 			Password:
 			<input type="password" name="password0" id="password0"><br>
 			Confirm Password:
-			<input type="password" name="password1"><br>
+			<input type="password" name="password1" id="password1"><br>
 			Phone Number:
 			<input type="tel" name="phone"><br>
 			I promise not to use this site for malicious purposes.<br>
