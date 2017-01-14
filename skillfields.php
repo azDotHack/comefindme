@@ -18,4 +18,11 @@
 		<option value="stem">Science, Technology, Engineering &amp; Mathematics</option>
 		<option value="tran">Transportation, Distribution &amp; Logistics</option>
 	</select>
+	<br>
+	
+	Description of your qualities:<br>
+	<textarea></textarea><br>
+	
+	List of Skills:<br>
+	<textarea></textarea><br>
 </form>
