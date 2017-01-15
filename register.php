@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Come Find Me!</title>
-	<meta charset="UTF-8">
-	<meta name="author" content="arizonaDotHack">
-	<meta name="robots" content="noindex, nofollow">
-	<link rel="stylesheet" href="style.css">
-	<script>
+<title>Come Find Me!</title>
+<meta charset="UTF-8">
+<meta name="author" content="arizonaDotHack">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="style.css">
+<script>
 		//JSON object
 		var stateData;
 		
@@ -140,14 +140,14 @@
 	<fieldset>
 		<form id="regconfirm_form" action="regconfirm.php" method="post">
 			<?php
-				//DATA RECEIVED FROM THE FIRST PAGE (IE FIRST NAME, LAST NAME, AND PROFILE PICTURE
-				$first_name = $_POST['signup_firstname'];
-				$last_name = $_POST['signup_lastname'];
-				$profile_pic = $_POST['signup_pic'];
-				
-				echo "<input type='hidden' name='signup_firstname' value='$first_name'>";
-				echo "<input type='hidden' name='signup_lastname' value='$last_name'>";
-				echo "<input type='hidden' name='signup_pic' value='$profile_pic'>";
+			// DATA RECEIVED FROM THE FIRST PAGE (IE FIRST NAME, LAST NAME, AND PROFILE PICTURE
+			$first_name = $_POST ['signup_firstname'];
+			$last_name = $_POST ['signup_lastname'];
+			$profile_pic = $_POST ['signup_pic'];
+			
+			echo "<input type='hidden' name='signup_firstname' value='$first_name'>";
+			echo "<input type='hidden' name='signup_lastname' value='$last_name'>";
+			echo "<input type='hidden' name='signup_pic' value='$profile_pic'>";
 			?>
 			
 			<!-- Input the rest of the data:
@@ -157,23 +157,22 @@
 				zip code
 				first set of skills (category + description)
 			 -->
-			<label>Email Address:</label>
-			<input class="register_fields" type="email" name="email0" id="email0"><br>
-			<label>Confirm Email Address:</label>
-			<input class="register_fields" type="email" name="email1" id="email1"><br>
-			<label>Password:</label>
-			<input class="register_fields" type="password" name="password0" id="password0"><br>
-			<label>Confirm Password:</label>
-			<input class="register_fields" type="password" name="password1" id="password1"><br>
-			<label>Phone Number (just type the 10 numbers (including area code); no spaces or dashes):</label>
-			<input class="register_fields" type="text" name="phone" id="phone"><br>
-			<label>State:</label>
+			<label>Email Address:</label> <input class="register_fields"
+				type="email" name="email0" id="email0"><br> <label>Confirm Email
+				Address:</label> <input class="register_fields" type="email"
+				name="email1" id="email1"><br> <label>Password:</label> <input
+				class="register_fields" type="password" name="password0"
+				id="password0"><br> <label>Confirm Password:</label> <input
+				class="register_fields" type="password" name="password1"
+				id="password1"><br> <label>Phone Number (just type the 10 numbers
+				(including area code); no spaces or dashes):</label> <input
+				class="register_fields" type="text" name="phone" id="phone"><br> <label>State:</label>
 			<input class="register_fields" type="text" name="state" id="state"><br>
-			<label>ZIP Code:</label>
-			<input class="register_fields" type="text" name="zip" id="zip" maxlength="5"><br>
-			<label>I promise not to use this site for malicious purposes.<br></label>
-			<input type="checkbox" name="agree" value="yes" id="agree">Yes, I agree<br>
-			<input type="submit" value="Submit">
+			<label>ZIP Code:</label> <input class="register_fields" type="text"
+				name="zip" id="zip" maxlength="5"><br> <label>I promise not to use
+				this site for malicious purposes.<br>
+			</label> <input type="checkbox" name="agree" value="yes" id="agree">Yes,
+			I agree<br> <input type="submit" value="Submit">
 		</form>
 	</fieldset>
 </body>

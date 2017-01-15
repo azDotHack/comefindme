@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<?php //code to grab info from server, store into variables to echo ?>
-	</head>
-	<body>
-		<div>
-			<form action="index.php">
-				<input type="submit" name="home" value="Return to Home">
-			</form>
+<head>
+<title>Edit a Job</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div>
+		<form action="index.php">
+			<input type="submit" name="home" value="Return to Home">
+		</form>
 			
-			<?php //php call for profile picture ?><br>
-			
-			<label>Name:</label>
+			<?php //php call for profile picture ?><br> <label>Name:</label>
 			<?php
-				//php call for name
-				echo $firstname + " " + $lastname;
+			// php call for name
+			echo $firstname + " " + $lastname;
 			?>
 			<br>
+<<<<<<< HEAD
 			
 			<form action="editpassword.php">
 				<input type="submit" name="pwChange" value="Change password">
@@ -28,20 +29,17 @@
 				//php call for email
 				echo $email;
 			?>
-			<br>
-			
-			<label>Phone:</label>
+			<br> <label>Phone:</label>
 			<?php
-				//php call for phone number
+				// php call for phone number
 				echo $phone;
 			?>
 			<br>
-			<form action="editcontact.php">
-				<input type="submit" name="contactChange" value="Change contact info">
-			</form>
-			<br><br>
-			
-			<label>Location:</label><br>
+		<form action="edit_email.php">
+			<input type="submit" name="contactChange" value="Change contact info">
+		</form>
+		<br>
+		<br> <label>Location:</label><br>
 			<?php
 				//php call for state and zip
 				echo $state + ", " + $zip;

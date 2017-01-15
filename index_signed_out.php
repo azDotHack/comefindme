@@ -20,31 +20,30 @@
 	</div>
 </form>
 
+<!-- Handle a user trying to sign in -->
 <?php 
 	//only show up if a username and password have been submitted
-	if (isset($_POST['username']) && isset($_POST['password'])) {
-		$username = $_POST['username'];
-		$password = $_POST['password'];
+	if (isset($_POST['signin_username']) && isset($_POST['signin_pwd'])) {
+		$username = $_POST['signin_username'];
+		$password = $_POST['signin_pwd'];
 	
 		//connect to database
 		require_once("db_creds.php");
 		$dbc = mysqli_connect(HOST, USER, PASSWORD, DB) or die("<h1>Error connecting to the database :(</h1>");
 		
 		//look for a match in email and password
-		$query = "SELECT * FROM users WHERE email='$username' and password=SHA('$password')";
+		$query = "SELECT * FROM profile_list WHERE email='$username' and password=SHA('$password')";
 		$result = mysqli_query($dbc, $query) or die("<h1>We encountered a backend problem and couldn't get you on the list... :(</h1>");
 	
 		//if there is no match, no entry
 		if (!$row = mysqli_fetch_assoc($result)) {
-			echo "<h3>Sorry! Your username and/or password is incorrect!";
+			echo "<h3>Sorry! Your username and/or password is incorrect!</h3>";
 		} else {
 			//otherwise, grant access to the account
-			$_SESSION['username'] = $row['username'];
+			$_SESSION['email'] = $row['email'];
 			$_SESSION['id'] = $row['id'];
 		}
 	
 		mysqli_close($dbc);
-		//refresh the page so get to the other index.php
-		header("Refresh:0");
 	}
 ?>

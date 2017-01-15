@@ -68,7 +68,7 @@
 <body>
 	<?php
 	// if some is logged in (there is a current session going on)
-	if (isset ( $_SESSION ['username'] )) {
+	if (isset($_SESSION['email'])) {
 		// request the index_signed_in page
 		require_once ("index_signed_in.php");
 	} else {
