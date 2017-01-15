@@ -17,7 +17,6 @@
 			echo $firstname + " " + $lastname;
 			?>
 			<br>
-<<<<<<< HEAD
 			
 			<form action="editpassword.php">
 				<input type="submit" name="pwChange" value="Change password">
@@ -35,7 +34,7 @@
 				echo $phone;
 			?>
 			<br>
-		<form action="edit_email.php">
+		<form action="editemail.php">
 			<input type="submit" name="contactChange" value="Change contact info">
 		</form>
 		<br>
