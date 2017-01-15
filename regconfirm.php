@@ -8,35 +8,9 @@
 		<meta name="description" content="This is a website for individuals to find others for basic jobs such as babysitting, lawnmowing, and more!">
 		<link rel="stylesheet" href="style.css">
 		<script>
-			function deleteChildren(id) {
-				var elem = document.getElementById(id);
-				while (elem.firstChild)
-					elem.removeChild(elem.firstChild);
-			}
-			
-// 			window.onload = function() {
-// 				//first get the string outputted by the clock
-// 				var clock = document.getElementById("clock"),
-// 				//content of the element
-// 					msg = clock.firstChild.data;
-
-// 				//set the last index in msg as the start time (in seconds)
-// 				var i = msg.substring(msg.length - 2, msg.length - 1);
-// 				//function to perform on the inverval in the while loop
-// 				var updateClock = function() {
-// 					deleteChildren("clock");
-// 					clock.appendChild(document.createTextNode(msg.substring(0, msg.length - 1) + i));
-// 				};
-
-// 				//start the time and loop each second until i runs to 0
-// 				while (i > 0) {
-// 					--i;
-// 					setTimeout(updateClock, 1000);
-// 				}
-
-// 				//go back to the home page
-// 				window.location.href = "index.php";				
-// 			};
+			window.onload = function() {
+				setTimeout('window.location.href = "index.php"', 5000);		
+			};
 		</script>
 	</head>
 	<body>
@@ -75,7 +49,7 @@
 			
 			//create a query that will insert a new row into the profile_list table
 			$query = "INSERT INTO profile_list (id, first_name, last_name, profile_picture, email, password, phone, state, zip_code, ver_code, activated) "
-					. "VALUES ('0', '$first_name', '$last_name', '$profile_picture', '$email', SHA('$password'), '$phone', '$state', '$zip_code', '$ver_code', '$activated')";
+					. "VALUES ('0', '$first_name', '$last_name', '$profile_picture', '$email', SHA('$password'), '$phone_number', '$state', '$zip_code', '$auth_code', '$activated')";
 					
 			//execute query
 			$result = mysqli_query($dbc, $query) or die("<h1>We encountered a backend problem and couldn't get you on the list... :(</h1>");
@@ -84,6 +58,6 @@
 				echo "<h1>Account successfully created!</h1>";
 			}
 		?>
-		<h2 id="clock">You will be redirected to the home page in 3</h2>
+		<h2 id="clock">You will be redirected to the home page very soon!</h2>
 	</body>
 </html>
