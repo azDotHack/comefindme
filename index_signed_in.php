@@ -2,24 +2,19 @@
 <div>
 	<h3>New Job Matches</h3>
 	
-	<!-- get top 10 job.php matches for this user -->
-	<?php ?>
-	
-	<a href="joblist.php">Click to see more jobs</a>
+	<?php //get top 10 job.php matches for this user ?>
+	<!-- ADD CODE TO LOAD MORE JOBS -->
 </div>
 <div>
 	<h3>New Employee Matches</h3>
 	
-	<!-- get top 10 skill.php matches for this user -->
-	<?php ?>
-	
-	<a href="employeelist.php">Click to see more employees</a>
+	<?php //get top 10 skill.php matches for this user ?>
+	<!-- ADD CODE TO LOAD MORE SKILLS -->
 </div>
 <div>
 	<h3>My Profile</h3>
 	
-	<!-- display name, profile pic, current jobs, current listings etc. -->
-	<?php echo "Hello world and all who inhabit it";?>
+	<?php //display name, profile pic, job.php and skill.php with contact requests ?>
 	
 	<!-- get direct to either edit profile or add a job -->
 	<form action="profile.php">

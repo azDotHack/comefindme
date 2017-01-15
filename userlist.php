@@ -15,5 +15,10 @@
 			<!-- loop to display all job.php for this user -->
 			<?php ?>
 		</div>
+		<div>
+			<form action="index.php">
+				<input type="submit" name="home" value="Return to Home">
+			</form>
+		</div>
 	</body>
 </html>

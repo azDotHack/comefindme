@@ -6,6 +6,6 @@
 	echo $online
 ?>
 
-<form action="editjob.php">
+<form action="editjob.php"	>
 	<input type="submit" name="" value="Update Job">
 </form>

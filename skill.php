@@ -5,3 +5,7 @@
 	echo $description;
 	echo $maxdistance;
 ?>
+
+<form action="editskill.php">
+	<input type="submit" name="" value="Update Skill">
+</form>

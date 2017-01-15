@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- code to grab info from server, store into variables to echo -->
-		<?php ?>
+		<?php //code to grab info from server, store into variables to echo ?>
 	</head>
 	<body>
 		<div>
@@ -10,28 +9,30 @@
 				<input type="submit" name="home" value="Return to Home">
 			</form>
 			
-			<!-- php call for profile picture -->
-			<?php ?>
+			<?php //php call for profile picture ?><br>
+			
 			<label>Name:</label>
-			<!-- php call for name -->
 			<?php
+				//php call for name
 				echo $firstname + " " + $lastname;
 			?>
 			<br>
+			
 			<form action="edit_password.php">
 				<input type="submit" name="pwChange" value="Change password">
 			</form>
 			<br><br>
 			
 			<label>Email:</label>
-			<!-- php call for email -->
 			<?php 
+				//php call for email
 				echo $email;
 			?>
 			<br>
 			
 			<label>Phone:</label>
-			<?php 
+			<?php
+				//php call for phone number
 				echo $phone;
 			?>
 			<br>
@@ -41,8 +42,8 @@
 			<br><br>
 			
 			<label>Location:</label><br>
-			<!-- php call for location -->
 			<?php
+				//php call for state and zip
 				echo $state + ", " + $zip;
 			?>
 			<form action="edit_location.php">
