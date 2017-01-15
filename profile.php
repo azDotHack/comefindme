@@ -18,7 +18,7 @@
 			?>
 			<br>
 			
-			<form action="edit_password.php">
+			<form action="editpassword.php">
 				<input type="submit" name="pwChange" value="Change password">
 			</form>
 			<br><br>
@@ -36,7 +36,7 @@
 				echo $phone;
 			?>
 			<br>
-			<form action="edit_email.php">
+			<form action="editcontact.php">
 				<input type="submit" name="contactChange" value="Change contact info">
 			</form>
 			<br><br>
@@ -46,7 +46,7 @@
 				//php call for state and zip
 				echo $state + ", " + $zip;
 			?>
-			<form action="edit_location.php">
+			<form action="editlocation.php">
 				<input type="submit" name="locationChange" value="Change Location">
 			</form>
 			<br>
