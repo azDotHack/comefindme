@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +17,29 @@
 			
 			<?php //php call for profile picture ?><br> <label>Name:</label>
 			<?php
+			//read from mysql
+			require_once("db_creds.php");
+			$dbc = mysqli_connect(HOST, USER, PASSWORD, DB);
+			$query_select = "SELECT * FROM profile_list WHERE email='" . $_SESSION["email"] . "' AND first_name='" . $_SESSION['first_name'] . "'";
+			$result = mysqli_query($dbc, $query_select);
+			
+			$firstname = "";
+			$lastname = "";
+			$email = "";
+			$phone = "";
+			$state = "";
+			$zip = "";
+			
+			while ($row = mysqli_fetch_array($result)) {
+				$firstname = $row['first_name'];
+				$lastname = $row['last_name'];
+				$email = $row['email'];
+				$phone = $row['phone'];
+				$state = $row['state'];
+				$zip = $row['zip_code'];
+			}
+			
+			
 			// php call for name
 			echo $firstname + " " + $lastname;
 			?>
