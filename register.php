@@ -8,6 +8,9 @@
 	<meta name="robots" content="noindex, nofollow">
 	<link rel="stylesheet" href="style.css">
 	<script>
+		//JSON object
+		var stateData;
+		
 		//return true if a field is empty
 		function isEmpty(elem) {
 			return elem.value == "";
@@ -41,7 +44,15 @@
 		
 		//use JSON file to validate if state input is a valid state
 		function validateState() {
-			return true;
+			var elem = document.getElementById("state");
+			//if the state input is two characters, we know the user put in an acronym, so we search for that
+			for (var state in stateData) {
+				if (elem.value == state)
+					return true;
+			}
+
+			alert("You did not enter a valid state (use an acronym (AZ) or the full name of a state)!");
+			return false;
 		}
 
 		//returns true if user checked the "agree" checkbox
@@ -85,8 +96,30 @@
 				madePromise()
 			;
 		}
+
+		//use an XMLHTTPREQUEST to load the data from state_data.json
+		function loadJSON(callback) {   
+		    var xobj = new XMLHttpRequest();
+		        xobj.overrideMimeType("application/json");
+		    xobj.open('GET', 'state_data.json', true);
+		    xobj.onreadystatechange = function () {
+		          if (xobj.readyState == 4 && xobj.status == "200") {
+		            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+		            callback(xobj.responseText);
+		          }
+		    };
+		    xobj.send(null);  
+		 }
 		
 		window.onload = function() {
+			//preload the JSON file
+			loadJSON(
+				function(response) {
+					// Parse JSON string into object
+    				stateData = JSON.parse(response);
+ 				}
+ 			);
+			
 			//when the form is submited, verify the inputs
 			document.getElementById("regconfirm_form").onsubmit = verifyFields;
 		};
