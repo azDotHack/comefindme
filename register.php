@@ -45,14 +45,24 @@
 		//use JSON file to validate if state input is a valid state
 		function validateState() {
 			var elem = document.getElementById("state");
-			//if the state input is two characters, we know the user put in an acronym, so we search for that
-			for (var state in stateData) {
-				if (elem.value == state)
-					return true;
+			if (elem.value.length == 2) {
+				//if the state input is two characters, we know the user put in an acronym, so we search for that
+				for (var state in stateData)
+					if (elem.value == state) {
+						elem.value = stateData[state];
+						return true;
+					}
+			} else {
+				//if the state input is NOT two characters, they are using the full name of a state
+				for (var state in stateData)
+					if (elem.value.toLowerCase() == stateData[state].toLowerCase()) {
+						elem.value = stateData[state];
+						return true;
+					}
 			}
 
 			alert("You did not enter a valid state (use an acronym (AZ) or the full name of a state)!");
-			return false;
+			return false;		
 		}
 
 		//returns true if user checked the "agree" checkbox
@@ -90,7 +100,7 @@
 
 			return areEqual("email0", "email1") &&
 				areEqual("password0", "password1") &&
-				followsRegex(/^\d{10}$/, "phone") && 
+				followsRegex(/^\d{10}$/, "phone") &&
 				followsRegex(/(^\d{5}$)|(^\d{5}-\d{4}$)/, "zip") &&
 				validateState() &&
 				madePromise()
