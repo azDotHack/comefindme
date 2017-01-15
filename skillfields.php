@@ -1,7 +1,7 @@
 <form action="index.php">
-	<select name="skill_fields" id = "skill_fields">
+	<select name="skill_fields" id="skill_fields">
 		<option value="default">--Pick a field--</option>
-		<option value="agri">Agriculture, Food &amp; Natural Resources </option>
+		<option value="agri">Agriculture, Food &amp; Natural Resources</option>
 		<option value="arch">Architecture &amp; Construction</option>
 		<option value="arts">Arts, Audio/Video Technology &amp; Communications</option>
 		<option value="busi">Business, Management &amp; Administration</option>
@@ -15,11 +15,10 @@
 		<option value="law">Law, Public Safety, Corrections &amp; Security</option>
 		<option value="manu">Manufacturing</option>
 		<option value="mark">Marketing, Sales &amp; Service</option>
-		<option value="stem">Science, Technology, Engineering &amp; Mathematics</option>
+		<option value="stem">Science, Technology, Engineering &amp;
+			Mathematics</option>
 		<option value="tran">Transportation, Distribution &amp; Logistics</option>
-	</select>
+	</select> <br> Description of your qualities:<br>
+	<textarea></textarea>
 	<br>
-	
-	Description of your qualities:<br>
-	<textarea></textarea><br>
 </form>

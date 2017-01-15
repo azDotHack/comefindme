@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<?php //code to grab info from server, store into variables to echo ?>
-	</head>
-	<body>
-		<div>
-			<form action="index.php">
-				<input type="submit" name="home" value="Return to Home">
-			</form>
+<head>
+<title>Edit a Job</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div>
+		<form action="index.php">
+			<input type="submit" name="home" value="Return to Home">
+		</form>
 			
-			<?php //php call for profile picture ?><br>
-			
-			<label>Name:</label>
+			<?php //php call for profile picture ?><br> <label>Name:</label>
 			<?php
-				//php call for name
-				echo $firstname + " " + $lastname;
+			// php call for name
+			echo $firstname + " " + $lastname;
 			?>
 			<br>
-			
-			<form action="edit_password.php">
-				<input type="submit" name="pwChange" value="Change password">
-			</form>
-			<br><br>
-			
-			<label>Email:</label>
-			<?php 
-				//php call for email
-				echo $email;
+
+		<form action="edit_password.php">
+			<input type="submit" name="pwChange" value="Change password">
+		</form>
+		<br>
+		<br> <label>Email:</label>
+			<?php
+			// php call for email
+			echo $email;
+			?>
+			<br> <label>Phone:</label>
+			<?php
+			// php call for phone number
+			echo $phone;
 			?>
 			<br>
-			
-			<label>Phone:</label>
+		<form action="edit_email.php">
+			<input type="submit" name="contactChange" value="Change contact info">
+		</form>
+		<br>
+		<br> <label>Location:</label><br>
 			<?php
-				//php call for phone number
-				echo $phone;
-			?>
-			<br>
-			<form action="edit_email.php">
-				<input type="submit" name="contactChange" value="Change contact info">
-			</form>
-			<br><br>
-			
-			<label>Location:</label><br>
-			<?php
-				//php call for state and zip
-				echo $state + ", " + $zip;
+			// php call for state and zip
+			echo $state + ", " + $zip;
 			?>
 			<form action="edit_location.php">
-				<input type="submit" name="locationChange" value="Change Location">
-			</form>
-			<br>
-		</div>
-		<div>
-			<form action="userlist.php">
-				<input type="submit" name="manageList" value="Manage Skills and Jobs">
-			</form>
-		</div>
-	</body>
+			<input type="submit" name="locationChange" value="Change Location">
+		</form>
+		<br>
+	</div>
+	<div>
+		<form action="userlist.php">
+			<input type="submit" name="manageList" value="Manage Skills and Jobs">
+		</form>
+	</div>
+</body>
 </html>

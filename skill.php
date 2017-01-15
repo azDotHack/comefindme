@@ -1,9 +1,9 @@
 <?php
-	//grab data to display skill data, detect if new skill
-	echo $skill;
-	echo $category;
-	echo $description;
-	echo $maxdistance;
+// grab data to display skill data, detect if new skill
+echo $skill;
+echo $category;
+echo $description;
+echo $maxdistance;
 ?>
 
 <form action="editskill.php">
