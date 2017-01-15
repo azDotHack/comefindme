@@ -1,4 +1,4 @@
-<h2>Hooray for SpongeBOOOOOOOOB!!!</h2>
+<h1>Successful login: Welcome back!</h1>
 <div>
 	<h3>New Job Matches</h3>
 	
@@ -17,10 +17,20 @@
 	<?php //display name, profile pic, job.php and skill.php with contact requests ?>
 	
 	<!-- get direct to either edit profile or add a job -->
-	<form action="profile.php">
-		<input type="submit" value="Edit My Profile" name=editprofile>
+	<form action="profile.php" method="post">
+		<div>
+			<input type="submit" value="Edit My Profile" name=editprofile>
+		</div>
 	</form>
-	<form action="userlist.php">
-		<input type="submit" value="Manage My Skills and Jobs" name=managelist>
+	<form action="userlist.php" method="post">
+		<div>
+			<input type="submit" value="Manage My Skills and Jobs"
+				name=managelist>
+		</div>
+	</form>
+	<form action="index.php" method="post">
+		<div>
+			<input type="submit" value="Log Out" name="logout">
+		</div>
 	</form>
 </div>

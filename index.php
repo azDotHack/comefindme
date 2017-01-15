@@ -72,14 +72,20 @@
 </head>
 <body>
 	<?php
-	// if some is logged in (there is a current session going on)
-	if (isset($_SESSION['email'])) {
-		// request the index_signed_in page
-		require_once ("index_signed_in.php");
-	} else {
-		// request the index_signed_out page
-		require_once ("index_signed_out.php");
-	}
+		//produce message for successful logout if that was done
+		if (isset($_POST['logout'])) {
+			session_destroy();
+			echo "<h2>Successful logout!</h2>";
+		}
+	
+		// if some is logged in (there is a current session going on)
+		if (isset($_SESSION['email'])) {
+			// request the index_signed_in page
+			require_once ("index_signed_in.php");
+		} else {
+			// request the index_signed_out page
+			require_once ("index_signed_out.php");
+		}
 	?>
 </body>
 </html>
