@@ -71,6 +71,7 @@
 	</script>
 </head>
 <body>
+	<img class="logo" alt="Come Find Me" src="assets/comefindme title.png">
 	<?php
 	// if some is logged in (there is a current session going on)
 	if (isset($_SESSION['email'])) {

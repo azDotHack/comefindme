@@ -34,7 +34,7 @@
 				echo $phone;
 			?>
 			<br>
-		<form action="editemail.php">
+		<form action="editcontact.php">
 			<input type="submit" name="contactChange" value="Change contact info">
 		</form>
 		<br>

@@ -1,9 +1,38 @@
 <?php
-	//grab data to display job data, detect if new job
-	echo $title;
-	echo $category;
-	echo $description;
-	echo $online
+	/*class job
+	{
+		private $title,
+				$category,
+				$description,
+				$online;
+		function __construct($newtitle, $newcategory, $newdescription, $newonline)
+		{
+			$this->title = $newtitle;
+			$this->category = $newcategory;
+			$this->description = $newdescription;
+			$this->online = $newonline;
+		}
+		
+		function get_title()
+		{
+			return $this->title;
+		}
+		
+		function get_category()
+		{
+			return $this->category;
+		}
+		
+		function get_description()
+		{
+			return $this->description;
+		}
+		
+		function get_online()
+		{
+			return $this->online;
+		}
+	}*/
 ?>
 
 <form action="editjob.php">

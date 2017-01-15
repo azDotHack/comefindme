@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Edit a Job</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">
-</head>
+	<head>
+		<title>Edit a Job</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
 <body>
 	<form action="userlist.php">
 		<label>Job Title:</label> <input type="text" name="title"> <br> <label>Category:</label>
