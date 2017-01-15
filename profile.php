@@ -6,6 +6,10 @@
 	</head>
 	<body>
 		<div>
+			<form action="index.php">
+				<input type="submit" name="home" value="Return to Home">
+			</form>
+			
 			<!-- php call for profile picture -->
 			<?php ?>
 			<label>Name:</label>
@@ -47,19 +51,8 @@
 			<br>
 		</div>
 		<div>
-			<label>Your current jobs:</label>
-			<!-- php call for jobs -->
-			<?php ?>
-			<form action="editjob.php">
-				<input type="submit" name="jobEdit" value="Edit Jobs">
-			</form>
-		</div>
-		<div>
-			<label>Your current skills:</label>
-			<!-- php call for skills -->
-			<?php ?>
-			<form action="editskill.php">
-				<input type="submit" name="skillEdit" value="Edit Skills">
+			<form action="userlist.php">
+				<input type="submit" name="manageList" value="Manage Skills and Jobs">
 			</form>
 		</div>
 	</body>
