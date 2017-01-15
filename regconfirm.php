@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<h1><strong>CONGLATURATION! YOU'RE WINNER!</strong></h1>
-		<form>
+		<form action="index.php">
 			Enter the code to join Come Find Me!<br>
 			<input type="text" name="confirm_code">
 			<input type="submit" value="submit">
