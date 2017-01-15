@@ -17,7 +17,7 @@
 		
 		<label>Description:</label><br>
 		<textarea name="jobdescription"></textarea><br>
-		<input type="submit" name="confirm" value="Update Job">
+		<input type="submit" name="confirm" value="Confirm Job">
 	</form>
 </body>
 </html>

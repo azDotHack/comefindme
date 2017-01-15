@@ -7,10 +7,17 @@
 </head>
 <body>
 	<form action="userlist.php">
-		<input type="text" name="title">
+		<label>Skill:</label>
+		<input type="text" name="skill">
+		<br>
+		
+		<label>Category:</label>
 		<?php //call skillfields list?>
-		<textarea name="skilldescription"></textarea>
-		<input type="submit" name="confirm" value="Update Skill">
+		<br>
+		
+		<label>Description:</label><br>
+		<textarea name="skilldescription"></textarea><br>
+		<input type="submit" name="confirm" value="Confirm Skill">
 	</form>
 </body>
 </html>

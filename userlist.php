@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- php call to get list for user -->
-		<?php ?>
+		<?php //php call to get skills and jobs for user ?>
 	</head>
 	<body>
 		<div>
 			<label>Your Skill List:</label>
-			<!-- loop to display all skill.php for this user -->
-			<?php ?>
+			<form action="editskill.php">
+				<input type="submit" name="newskill" value="Add new Skill">
+			</form>
+			<?php //loop to display all skill.php for this user ?>
 		</div>
 		<div>
 			<label>Your Job Requests:</label>
-			<!-- loop to display all job.php for this user -->
-			<?php ?>
+			<form action="editjob.php">
+				<input type="submit" name="newjob" value="Create new Job Listing">
+			</form>
+			<?php //loop to display all job.php for this user ?>
 		</div>
 		<div>
 			<form action="index.php">
