@@ -1,9 +1,31 @@
-{
+* {
 	margin: 0;
 	padding: 0;
-	
-	img.logo{
-		max-width:50%;
-		height:auto;
-	}
+}
+
+body, input, textarea {
+	font-family: sans-serif;
+	font-size: xx-large;
+	background-color: maroon;
+	color: white;
+	text-align: center;
+	margin: 5px;
+}
+
+div #logo {
+	width: 900px;
+	height: 300px;
+	display: block;
+	margin: auto;
+}
+
+input[type='submit'] {
+	padding: 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+textarea, input[type='text'] {
+	text-align: left;
 }

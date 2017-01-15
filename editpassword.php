@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<h2>Change Password:</h2>
-		<form action="regconfirm.php">
+		<form action="new_pwd_confirm.php" method="post">
 			<label>Old Password:</label>
 			<input type="password" name="oldpass"><br>
 			

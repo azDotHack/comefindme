@@ -7,6 +7,13 @@
 <head>
 <title>Edit a Job</title>
 <meta charset="UTF-8">
+<meta name="author" content="arizonaDotHack">
+<meta name="keywords"
+	content="come, find, me, search, jobs, individuals">
+<meta name="description"
+	content="This is a website for individuals to find others for basic jobs such as babysitting, lawnmowing, and more!">
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +21,7 @@
 		<form action="index.php">
 			<input type="submit" name="home" value="Return to Home">
 		</form>
-			
+			<h1>Edit Profile</h1>
 			<?php //php call for profile picture ?><br> <label>Name:</label>
 			<?php
 			//read from mysql
@@ -31,6 +38,7 @@
 			$zip = "";
 			
 			while ($row = mysqli_fetch_array($result)) {
+				$id = $row['id'];
 				$firstname = $row['first_name'];
 				$lastname = $row['last_name'];
 				$email = $row['email'];

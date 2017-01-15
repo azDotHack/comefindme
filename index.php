@@ -71,7 +71,7 @@
 	</script>
 </head>
 <body>
-	<img class="logo" alt="Come Find Me" src="assets/comefindme title.png">
+	<div><img id="logo" alt="Come Find Me" src="assets/comefindme title.png"></div>
 	<?php		
 		//produce message for successful logout if that was done
 		if (isset($_POST['logout'])) {

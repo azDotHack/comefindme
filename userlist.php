@@ -5,6 +5,14 @@
 		include("job.php");
 		include("skill.php");
 	?>
+	<title>Come Find Me!</title>
+<meta charset="UTF-8">
+<meta name="author" content="arizonaDotHack">
+<meta name="keywords"
+	content="come, find, me, search, jobs, individuals">
+<meta name="description"
+	content="This is a website for individuals to find others for basic jobs such as babysitting, lawnmowing, and more!">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div>
