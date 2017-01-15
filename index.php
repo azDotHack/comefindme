@@ -1,6 +1,6 @@
 <?php
 	//begin a session
-	session_start ();
+	session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -72,15 +72,21 @@
 </head>
 <body>
 	<img class="logo" alt="Come Find Me" src="assets/comefindme title.png">
-	<?php
-	// if some is logged in (there is a current session going on)
-	if (isset($_SESSION['email'])) {
-		// request the index_signed_in page
-		require_once ("index_signed_in.php");
-	} else {
-		// request the index_signed_out page
-		require_once ("index_signed_out.php");
-	}
+	<?php		
+		//produce message for successful logout if that was done
+		if (isset($_POST['logout'])) {
+			session_destroy();
+			header("Refresh:0");
+		}
+	
+		// if some is logged in (there is a current session going on)
+		if (isset($_SESSION['email'])) {
+			// request the index_signed_in page
+			require_once ("index_signed_in.php");
+		} else {
+			// request the index_signed_out page
+			require_once ("index_signed_out.php");
+		}
 	?>
 </body>
 </html>

@@ -30,7 +30,7 @@
 		} else {
 			//otherwise, grant access to the account
 			$_SESSION['email'] = $row['email'];
-			$_SESSION['id'] = $row['id'];
+			$_SESSION['first_name'] = $row['first_name'];
 		}
 	
 		mysqli_close($dbc);
