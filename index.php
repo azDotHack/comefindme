@@ -1,3 +1,7 @@
+<?php
+	//begin a session
+	session_start ();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,7 +57,8 @@
 
 			return isValid;
 		}
-		
+
+		//verify form input data from the home pages
 		window.onload = function() {
 			document.getElementById("signin_form").onsubmit = function() {
 				return verifyTextInput("signin_username", "signin_pwd");
