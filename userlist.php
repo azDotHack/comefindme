@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php //php call to get skills and jobs for user
-		include("job.php");
-		include("skill.php");
-	?>
 	<title>Come Find Me!</title>
 <meta charset="UTF-8">
 <meta name="author" content="arizonaDotHack">
