@@ -1,6 +1,6 @@
 <?php
 	//begin a session
-	session_start ();
+	session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -71,11 +71,11 @@
 	</script>
 </head>
 <body>
-	<?php
+	<?php		
 		//produce message for successful logout if that was done
 		if (isset($_POST['logout'])) {
 			session_destroy();
-			echo "<h2>Successful logout!</h2>";
+			header("Refresh:0");
 		}
 	
 		// if some is logged in (there is a current session going on)
