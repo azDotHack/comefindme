@@ -22,7 +22,4 @@
 	
 	Description of your qualities:<br>
 	<textarea></textarea><br>
-	
-	List of Skills:<br>
-	<textarea></textarea><br>
 </form>
